@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact — B. SureshBabu</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  :root { --bg: #fffbea; --text: #2a1f00; --muted: #7a6430; --border: #e8d89a; --accent: #c87a00; --card: #fff9d6; }
+  body { font-family: 'Inter', sans-serif; background: var(--bg); color: var(--text); min-height: 100vh; }
+
+  nav { display: flex; justify-content: space-between; align-items: center; padding: 0 2.5rem; background: var(--card); border-bottom: 2px solid var(--border); }
+  nav .brand { font-family: 'EB Garamond', serif; font-size: 18px; font-weight: 700; color: var(--accent); padding: 1.1rem 0; text-decoration: none; }
+  nav .navlinks { display: flex; }
+  nav .navlinks a { font-size: 13px; font-weight: 500; color: var(--muted); text-decoration: none; padding: 1.1rem 1.4rem; border-bottom: 3px solid transparent; transition: all 0.15s; display: block; }
+  nav .navlinks a:hover { color: var(--accent); }
+  nav .navlinks a.active { color: var(--accent); border-bottom: 3px solid var(--accent); }
+
+  .container { max-width: 680px; margin: 0 auto; padding: 4rem 2rem 5rem; }
+  .page-title { font-family: 'EB Garamond', serif; font-size: 36px; font-weight: 700; color: var(--text); margin-bottom: 0.4rem; }
+  .page-sub { font-size: 14px; color: var(--muted); margin-bottom: 3rem; }
+
+  .contact-card { background: var(--card); border: 1px solid var(--border); border-radius: 8px; padding: 2rem 2.5rem; margin-bottom: 1.5rem; }
+  .contact-card h2 { font-family: 'EB Garamond', serif; font-size: 18px; font-weight: 600; color: var(--accent); margin-bottom: 1.25rem; }
+  .contact-row { display: flex; align-items: flex-start; gap: 1rem; padding: 0.75rem 0; border-top: 1px solid var(--border); }
+  .contact-row:first-of-type { border-top: none; }
+  .contact-label { font-size: 12px; font-weight: 600; color: var(--muted); text-transform: uppercase; letter-spacing: 0.06em; min-width: 80px; padding-top: 1px; }
+  .contact-value { font-size: 14px; color: var(--text); line-height: 1.6; }
+  .contact-value a { color: var(--accent); text-decoration: none; border-bottom: 1px solid var(--border); }
+  .contact-value a:hover { border-color: var(--accent); }
+
+  .ref-card { background: var(--card); border: 1px solid var(--border); border-radius: 8px; padding: 1.5rem 2rem; margin-bottom: 1rem; }
+  .ref-name { font-size: 15px; font-weight: 600; color: var(--text); margin-bottom: 2px; }
+  .ref-role { font-size: 13px; color: var(--muted); margin-bottom: 2px; }
+  .ref-inst { font-size: 13px; color: var(--muted); margin-bottom: 6px; }
+  .ref-email { font-size: 13px; }
+  .ref-email a { color: var(--accent); text-decoration: none; border-bottom: 1px solid var(--border); }
+  .ref-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1rem; margin-top: 1.5rem; }
+
+  .section-heading { font-size: 13px; font-weight: 600; color: var(--muted); letter-spacing: 0.08em; text-transform: uppercase; margin: 2.5rem 0 1rem; padding-bottom: 0.5rem; border-bottom: 1px solid var(--border); }
+
+  footer { text-align: center; padding: 2rem; font-size: 13px; color: var(--muted); border-top: 1px solid var(--border); margin-top: 2rem; }
+
+  @media (max-width: 560px) {
+    nav { padding: 0 1rem; flex-direction: column; align-items: flex-start; }
+    nav .navlinks { width: 100%; }
+    nav .navlinks a { padding: 0.8rem 0.8rem; font-size: 12px; }
+    .contact-card { padding: 1.5rem; }
+  }
+</style>
+</head>
+<body>
+<nav>
+  <a class="brand" href="index.html">B. SureshBabu</a>
+  <div class="navlinks">
+    <a href="index.html">About Me</a>
+    <a href="publications.html">Publications</a>
+    <a href="conferences.html">Conferences</a>
+    <a href="contact.html" class="active">Contact</a>
+  </div>
+</nav>
+
+<div class="container">
+  <h1 class="page-title">Contact</h1>
+  <p class="page-sub">Feel free to reach out for collaborations, questions, or discussions.</p>
+
+  <div class="contact-card">
+    <h2>Get in Touch</h2>
+    <div class="contact-row">
+      <div class="contact-label">Email</div>
+      <div class="contact-value"><a href="mailto:sureshsuju96@gmail.com">sureshsuju96@gmail.com</a></div>
+    </div>
+    <div class="contact-row">
+      <div class="contact-label">Phone</div>
+      <div class="contact-value">+91 99448 07162</div>
+    </div>
+    <div class="contact-row">
+      <div class="contact-label">Position</div>
+      <div class="contact-value">Senior Project Associate</div>
+    </div>
+    <div class="contact-row">
+      <div class="contact-label">Institute</div>
+      <div class="contact-value">Aryabhatta Research Institute of Observational Sciences (ARIES), India</div>
+    </div>
+    <div class="contact-row">
+      <div class="contact-label">PhD</div>
+      <div class="contact-value">VIT Bhopal University, Bhopal, India (2022–2026)</div>
+    </div>
+  </div>
+
+  <div class="section-heading">References</div>
+  <div class="ref-grid">
+    <div class="ref-card">
+      <div class="ref-name">Dr. Pradeep K. Kayshap</div>
+      <div class="ref-role">Senior Assistant Professor</div>
+      <div class="ref-inst">VIT Bhopal University</div>
+      <div class="ref-email"><a href="mailto:pradeep.kayshap@vitbhopal.ac.in">pradeep.kayshap@vitbhopal.ac.in</a></div>
+    </div>
+    <div class="ref-card">
+      <div class="ref-name">Prof. Abhishekh Kumar Srivastava</div>
+      <div class="ref-role">Professor</div>
+      <div class="ref-inst">Department of Physics, IIT (BHU)</div>
+      <div class="ref-email"><a href="mailto:asrivastava.app@iitbhu.ac.in">asrivastava.app@iitbhu.ac.in</a></div>
+    </div>
+    <div class="ref-card">
+      <div class="ref-name">Dr. Athiray P. S.</div>
+      <div class="ref-role">Researcher</div>
+      <div class="ref-inst">University of Alabama in Huntsville, USA</div>
+      <div class="ref-email"><a href="mailto:athiray.panchap@uah.edu">athiray.panchap@uah.edu</a></div>
+    </div>
+  </div>
+
+</div>
+
+<footer>© 2026 B. SureshBabu · Solar Astrophysicist</footer>
+</body>
+</html>
