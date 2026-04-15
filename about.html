@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About Me — B. SureshBabu</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  :root { --bg: #fffbea; --text: #2a1f00; --muted: #7a6430; --border: #e8d89a; --accent: #c87a00; --card: #fff9d6; }
+  body { font-family: 'Inter', sans-serif; background: var(--bg); color: var(--text); min-height: 100vh; }
+
+  nav { display: flex; justify-content: space-between; align-items: center; padding: 0 2.5rem; background: var(--card); border-bottom: 2px solid var(--border); }
+  nav .brand { font-family: 'EB Garamond', serif; font-size: 18px; font-weight: 700; color: var(--accent); padding: 1.1rem 0; text-decoration: none; }
+  nav .navlinks { display: flex; }
+  nav .navlinks a { font-size: 13px; font-weight: 500; color: var(--muted); text-decoration: none; padding: 1.1rem 1.4rem; border-bottom: 3px solid transparent; transition: all 0.15s; display: block; }
+  nav .navlinks a:hover { color: var(--accent); }
+  nav .navlinks a.active { color: var(--accent); border-bottom: 3px solid var(--accent); }
+
+  .container { max-width: 760px; margin: 0 auto; padding: 4rem 2rem 5rem; }
+  .page-title { font-family: 'EB Garamond', serif; font-size: 36px; font-weight: 700; color: var(--text); margin-bottom: 2rem; }
+
+  .about-block { margin-bottom: 2rem; }
+  .about-block h2 { font-size: 13px; font-weight: 600; color: var(--muted); text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 0.75rem; padding-bottom: 0.5rem; border-bottom: 1px solid var(--border); }
+  .about-block p { font-size: 15px; color: #5a4010; line-height: 1.9; }
+
+  .edu-row { display: flex; gap: 1rem; padding: 0.85rem 0; border-top: 1px solid var(--border); align-items: flex-start; }
+  .edu-row:first-of-type { border-top: none; }
+  .edu-year { font-size: 12px; color: var(--muted); min-width: 90px; padding-top: 2px; }
+  .edu-body .edu-degree { font-size: 14px; font-weight: 600; color: var(--text); }
+  .edu-body .edu-inst { font-size: 13px; color: var(--muted); }
+
+  .skills-row { display: flex; gap: 8px; flex-wrap: wrap; }
+  .skill { font-size: 13px; padding: 5px 14px; border: 1px solid var(--border); border-radius: 4px; color: var(--muted); background: var(--card); }
+
+  footer { text-align: center; padding: 2rem; font-size: 13px; color: var(--muted); border-top: 1px solid var(--border); margin-top: 2rem; }
+
+  @media (max-width: 560px) {
+    nav { padding: 0 1rem; flex-direction: column; align-items: flex-start; }
+    nav .navlinks { width: 100%; }
+    nav .navlinks a { padding: 0.8rem 0.75rem; font-size: 12px; }
+  }
+</style>
+</head>
+<body>
+<nav>
+  <a class="brand" href="index.html">B. SureshBabu</a>
+  <div class="navlinks">
+    <a href="about.html" class="active">About Me</a>
+    <a href="publications.html">Publications</a>
+    <a href="conferences.html">Conferences</a>
+    <a href="contact.html">Contact</a>
+  </div>
+</nav>
+
+<div class="container">
+  <h1 class="page-title">About Me</h1>
+
+  <div class="about-block">
+    <h2>Research</h2>
+    <p>My research focuses on the analysis of solar observational data, particularly the diagnosis of transient phenomena in solar active regions using spectroscopic and imaging observations in the UV, EUV, and X-ray regimes. I apply advanced data analysis techniques in IDL and Python for the reduction, analysis, and interpretation of multiwavelength solar observations.</p>
+  </div>
+
+  <div class="about-block">
+    <h2>Education</h2>
+    <div class="edu-row">
+      <div class="edu-year">2022 – 2026</div>
+      <div class="edu-body">
+        <div class="edu-degree">PhD, Physics</div>
+        <div class="edu-inst">VIT Bhopal University</div>
+      </div>
+    </div>
+    <div class="edu-row">
+      <div class="edu-year">2019 – 2021</div>
+      <div class="edu-body">
+        <div class="edu-degree">MSc, Physics</div>
+        <div class="edu-inst">VIT University</div>
+      </div>
+    </div>
+    <div class="edu-row">
+      <div class="edu-year">2013 – 2016</div>
+      <div class="edu-body">
+        <div class="edu-degree">BSc, AMS</div>
+        <div class="edu-inst">Alagappa University</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="about-block">
+    <h2>Skills</h2>
+    <div class="skills-row">
+      <span class="skill">IDL</span>
+      <span class="skill">Python</span>
+      <span class="skill">LaTeX</span>
+      <span class="skill">Origin</span>
+      <span class="skill">IRIS Spectroscopy</span>
+      <span class="skill">Multiwavelength Analysis</span>
+      <span class="skill">Data Reduction</span>
+    </div>
+  </div>
+
+  <div class="about-block">
+    <h2>Training</h2>
+    <p>Advanced training programme on "Studies of Charged and Neutral Radiation in Space, Its Variation and Potential Impact on Human Presence in Space" at the University of Alabama in Huntsville, USA under the SPARC-III program of the Ministry of Education, Govt of India (March–June 2025).</p>
+  </div>
+
+  <div class="about-block">
+    <h2>Award</h2>
+    <p>Raman Research Award (2024) — VIT Bhopal University</p>
+  </div>
+
+</div>
+
+<footer>© 2026 B. SureshBabu · Solar Astrophysicist</footer>
+</body>
+</html>

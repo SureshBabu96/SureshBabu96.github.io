@@ -32,13 +32,19 @@
   .contact-value a:hover { border-color: var(--accent); }
 
   .section-heading { font-size: 13px; font-weight: 600; color: var(--muted); letter-spacing: 0.08em; text-transform: uppercase; margin: 2.5rem 0 1rem; padding-bottom: 0.5rem; border-bottom: 1px solid var(--border); }
+  .ref-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1rem; }
+  .ref-card { background: var(--card); border: 1px solid var(--border); border-radius: 8px; padding: 1.5rem; }
+  .ref-name { font-size: 15px; font-weight: 600; color: var(--text); margin-bottom: 2px; }
+  .ref-role { font-size: 13px; color: var(--muted); }
+  .ref-inst { font-size: 13px; color: var(--muted); margin-bottom: 6px; }
+  .ref-email a { font-size: 13px; color: var(--accent); text-decoration: none; border-bottom: 1px solid var(--border); }
 
   footer { text-align: center; padding: 2rem; font-size: 13px; color: var(--muted); border-top: 1px solid var(--border); margin-top: 2rem; }
 
   @media (max-width: 560px) {
     nav { padding: 0 1rem; flex-direction: column; align-items: flex-start; }
     nav .navlinks { width: 100%; }
-    nav .navlinks a { padding: 0.8rem 0.8rem; font-size: 12px; }
+    nav .navlinks a { padding: 0.8rem 0.75rem; font-size: 12px; }
     .contact-card { padding: 1.5rem; }
   }
 </style>
@@ -47,7 +53,7 @@
 <nav>
   <a class="brand" href="index.html">B. SureshBabu</a>
   <div class="navlinks">
-    <a href="index.html">About Me</a>
+    <a href="about.html">About Me</a>
     <a href="publications.html">Publications</a>
     <a href="conferences.html">Conferences</a>
     <a href="contact.html" class="active">Contact</a>
@@ -82,6 +88,27 @@
     </div>
   </div>
 
+  <div class="section-heading">References</div>
+  <div class="ref-grid">
+    <div class="ref-card">
+      <div class="ref-name">Dr. Pradeep K. Kayshap</div>
+      <div class="ref-role">Senior Assistant Professor</div>
+      <div class="ref-inst">VIT Bhopal University</div>
+      <div class="ref-email"><a href="mailto:pradeep.kayshap@vitbhopal.ac.in">pradeep.kayshap@vitbhopal.ac.in</a></div>
+    </div>
+    <div class="ref-card">
+      <div class="ref-name">Prof. Abhishekh Kumar Srivastava</div>
+      <div class="ref-role">Professor</div>
+      <div class="ref-inst">Department of Physics, IIT (BHU)</div>
+      <div class="ref-email"><a href="mailto:asrivastava.app@iitbhu.ac.in">asrivastava.app@iitbhu.ac.in</a></div>
+    </div>
+    <div class="ref-card">
+      <div class="ref-name">Dr. Athiray P. S.</div>
+      <div class="ref-role">Researcher</div>
+      <div class="ref-inst">University of Alabama in Huntsville, USA</div>
+      <div class="ref-email"><a href="mailto:athiray.panchap@uah.edu">athiray.panchap@uah.edu</a></div>
+    </div>
+  </div>
 </div>
 
 <footer>© 2026 B. SureshBabu · Solar Astrophysicist</footer>
