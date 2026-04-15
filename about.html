@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>About Me — B. SureshBabu</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
   :root { --bg: #fffbea; --text: #2a1f00; --muted: #7a6430; --border: #e8d89a; --accent: #c87a00; --card: #fff9d6; }
@@ -18,21 +18,38 @@
   nav .navlinks a:hover { color: var(--accent); }
   nav .navlinks a.active { color: var(--accent); border-bottom: 3px solid var(--accent); }
 
-  .container { max-width: 760px; margin: 0 auto; padding: 4rem 2rem 5rem; }
-  .page-title { font-family: 'EB Garamond', serif; font-size: 36px; font-weight: 700; color: var(--text); margin-bottom: 2rem; }
+  .container { max-width: 780px; margin: 0 auto; padding: 4rem 2rem 6rem; }
 
-  .about-block { margin-bottom: 2rem; }
-  .about-block h2 { font-size: 13px; font-weight: 600; color: var(--muted); text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 0.75rem; padding-bottom: 0.5rem; border-bottom: 1px solid var(--border); }
-  .about-block p { font-size: 15px; color: #5a4010; line-height: 1.9; }
+  .intro-block { margin-bottom: 4rem; }
+  .intro-block .greeting { font-size: 13px; font-weight: 600; color: var(--accent); text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 0.75rem; }
+  .intro-block h1 { font-family: 'EB Garamond', serif; font-size: 42px; font-weight: 700; color: var(--text); line-height: 1.2; margin-bottom: 1.5rem; }
+  .intro-block p { font-size: 16px; color: #5a4010; line-height: 1.95; margin-bottom: 1.25rem; }
+  .intro-block p .highlight { font-family: 'EB Garamond', serif; font-style: italic; font-size: 18px; color: var(--accent); }
 
+  .divider { border: none; border-top: 1px solid var(--border); margin: 3.5rem 0; }
+
+  .section-label { font-size: 12px; font-weight: 600; color: var(--accent); text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 1rem; }
+  .section-title { font-family: 'EB Garamond', serif; font-size: 28px; font-weight: 700; color: var(--text); margin-bottom: 1.5rem; line-height: 1.3; }
+
+  .research-block p { font-size: 15px; color: #5a4010; line-height: 1.95; margin-bottom: 1.25rem; }
+  .research-block p:last-child { margin-bottom: 0; }
+
+  .interest-tags { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 1.75rem; }
+  .tag { font-size: 13px; padding: 6px 16px; border: 1.5px solid var(--border); border-radius: 20px; color: var(--muted); background: var(--card); font-weight: 500; }
+
+  .hobbies-block { margin-top: 0; }
+  .hobby-photo-wrap { margin: 2rem 0; border-radius: 10px; overflow: hidden; }
+  .hobby-photo-wrap img { width: 100%; max-height: 420px; object-fit: cover; object-position: center 20%; display: block; border-radius: 10px; }
+  .photo-caption { font-size: 12px; color: var(--muted); text-align: center; margin-top: 8px; font-style: italic; }
+  .hobbies-block p { font-size: 15px; color: #5a4010; line-height: 1.95; margin-bottom: 1.25rem; }
+  .hobbies-block p:last-child { margin-bottom: 0; }
+
+  .edu-block { margin-top: 0; }
   .edu-row { display: flex; gap: 1rem; padding: 0.85rem 0; border-top: 1px solid var(--border); align-items: flex-start; }
   .edu-row:first-of-type { border-top: none; }
-  .edu-year { font-size: 12px; color: var(--muted); min-width: 90px; padding-top: 2px; }
-  .edu-body .edu-degree { font-size: 14px; font-weight: 600; color: var(--text); }
-  .edu-body .edu-inst { font-size: 13px; color: var(--muted); }
-
-  .skills-row { display: flex; gap: 8px; flex-wrap: wrap; }
-  .skill { font-size: 13px; padding: 5px 14px; border: 1px solid var(--border); border-radius: 4px; color: var(--muted); background: var(--card); }
+  .edu-year { font-size: 12px; color: var(--muted); min-width: 96px; padding-top: 2px; }
+  .edu-degree { font-size: 14px; font-weight: 600; color: var(--text); }
+  .edu-inst { font-size: 13px; color: var(--muted); }
 
   footer { text-align: center; padding: 2rem; font-size: 13px; color: var(--muted); border-top: 1px solid var(--border); margin-top: 2rem; }
 
@@ -40,10 +57,13 @@
     nav { padding: 0 1rem; flex-direction: column; align-items: flex-start; }
     nav .navlinks { width: 100%; }
     nav .navlinks a { padding: 0.8rem 0.75rem; font-size: 12px; }
+    .intro-block h1 { font-size: 32px; }
+    .section-title { font-size: 24px; }
   }
 </style>
 </head>
 <body>
+
 <nav>
   <a class="brand" href="index.html">B. SureshBabu</a>
   <div class="navlinks">
@@ -55,59 +75,95 @@
 </nav>
 
 <div class="container">
-  <h1 class="page-title">About Me</h1>
 
-  <div class="about-block">
-    <h2>Research</h2>
-    <p>My research focuses on the analysis of solar observational data, particularly the diagnosis of transient phenomena in solar active regions using spectroscopic and imaging observations in the UV, EUV, and X-ray regimes. I apply advanced data analysis techniques in IDL and Python for the reduction, analysis, and interpretation of multiwavelength solar observations.</p>
+  <div class="intro-block">
+    <div class="greeting">Hello, I'm Suresh</div>
+    <h1>A solar physicist who grew up asking questions about the Sun</h1>
+    <p>
+      I come from <span class="highlight">Palani</span> — a small, vibrant town nestled in the foothills of the Western Ghats in Tamil Nadu, India. It's a place of temples, mist, and mountains. But what shaped my scientific curiosity wasn't the mountains themselves — it was something a little further up.
+    </p>
+    <p>
+      Palani sits remarkably close to the <strong>Kodaikanal Solar Observatory</strong>, one of India's oldest and most respected centres for solar research. As a child, I visited the observatory with family — not as a student, just as a curious visitor. I remember standing there, watching the instruments pointed at the sky, and asking myself: <em>How do we actually get information about the Sun? And why does anyone want to study it so badly?</em>
+    </p>
+    <p>
+      Those questions never really left me. They followed me through school, through university, and eventually into a PhD in physics — where I finally found the tools to start answering them.
+    </p>
   </div>
 
-  <div class="about-block">
-    <h2>Education</h2>
+  <hr class="divider">
+
+  <div class="research-block" style="margin-bottom: 3.5rem;">
+    <div class="section-label">Research</div>
+    <h2 class="section-title">What I study — and why it fascinates me</h2>
+    <p>
+      The Sun is far from the calm, steady ball of light it appears to be. It is a dynamic, sometimes violent star — one that erupts, twists, and throws enormous clouds of magnetised plasma into space. My research lives right in the middle of that drama.
+    </p>
+    <p>
+      I study <strong>transient phenomena in solar active regions</strong> — events like flares, surges, filament eruptions, and jets that happen suddenly and release enormous amounts of energy. To understand these events, I use spectroscopic and imaging observations in the ultraviolet, extreme ultraviolet, and X-ray wavelengths — light that our eyes cannot see, but that carries the signatures of hot, fast-moving plasma on the Sun's surface and atmosphere.
+    </p>
+    <p>
+      What genuinely captivates me is the diagnostic aspect: decoding what the light from the Sun is telling us. Through spectroscopy, I can measure temperatures, velocities, densities — essentially reading the Sun's behaviour from millions of kilometres away. Using tools like <strong>IRIS</strong> (Interface Region Imaging Spectrograph) and data analysis in IDL and Python, I try to understand how energy is stored, released, and transported in the solar atmosphere.
+    </p>
+    <p>
+      At its core, my curiosity hasn't changed much since that childhood visit to Kodaikanal — I'm still trying to figure out what the Sun is doing, and why.
+    </p>
+    <div class="interest-tags">
+      <span class="tag">Solar flares</span>
+      <span class="tag">Spectroscopic diagnostics</span>
+      <span class="tag">Active region jets</span>
+      <span class="tag">Filament eruptions</span>
+      <span class="tag">Coronal loops</span>
+      <span class="tag">Magnetic reconnection</span>
+      <span class="tag">IRIS spectroscopy</span>
+      <span class="tag">Solar surges</span>
+    </div>
+  </div>
+
+  <hr class="divider">
+
+  <div class="hobbies-block" style="margin-bottom: 3.5rem;">
+    <div class="section-label">Beyond the Lab</div>
+    <h2 class="section-title">Trails, peaks, and a camera in hand</h2>
+
+    <div class="hobby-photo-wrap">
+      <img src="about-photo.jpg" alt="SureshBabu hiking outdoors">
+      <p class="photo-caption">Somewhere between a trailhead and a great view — my favourite place to think.</p>
+    </div>
+
+    <p>
+      When I'm not staring at solar spectra, I'm usually looking for a trail to walk. Trekking and hiking give me the kind of perspective that no dataset ever quite can — you spend hours climbing, your mind wanders, and somewhere along the way a problem you've been stuck on suddenly becomes clear. The Western Ghats, where I grew up, gave me a lifelong love for mountains and open skies.
+    </p>
+    <p>
+      I also love to travel — not just to reach destinations, but to experience the way landscapes, cultures, and people differ from place to place. And wherever I go, I bring a camera. Photography, for me, is another way of observing — framing light, finding patterns, capturing a moment that would otherwise disappear. Not so different from what I do with the Sun, really.
+    </p>
+  </div>
+
+  <hr class="divider">
+
+  <div class="edu-block">
+    <div class="section-label">Education</div>
+    <h2 class="section-title" style="margin-bottom: 1.25rem;">Academic background</h2>
     <div class="edu-row">
       <div class="edu-year">2022 – 2026</div>
-      <div class="edu-body">
+      <div>
         <div class="edu-degree">PhD, Physics</div>
         <div class="edu-inst">VIT Bhopal University</div>
       </div>
     </div>
     <div class="edu-row">
       <div class="edu-year">2019 – 2021</div>
-      <div class="edu-body">
+      <div>
         <div class="edu-degree">MSc, Physics</div>
         <div class="edu-inst">VIT University</div>
       </div>
     </div>
     <div class="edu-row">
       <div class="edu-year">2013 – 2016</div>
-      <div class="edu-body">
+      <div>
         <div class="edu-degree">BSc, AMS</div>
         <div class="edu-inst">Alagappa University</div>
       </div>
     </div>
-  </div>
-
-  <div class="about-block">
-    <h2>Skills</h2>
-    <div class="skills-row">
-      <span class="skill">IDL</span>
-      <span class="skill">Python</span>
-      <span class="skill">LaTeX</span>
-      <span class="skill">Origin</span>
-      <span class="skill">IRIS Spectroscopy</span>
-      <span class="skill">Multiwavelength Analysis</span>
-      <span class="skill">Data Reduction</span>
-    </div>
-  </div>
-
-  <div class="about-block">
-    <h2>Training</h2>
-    <p>Advanced training programme on "Studies of Charged and Neutral Radiation in Space, Its Variation and Potential Impact on Human Presence in Space" at the University of Alabama in Huntsville, USA under the SPARC-III program of the Ministry of Education, Govt of India (March–June 2025).</p>
-  </div>
-
-  <div class="about-block">
-    <h2>Award</h2>
-    <p>Raman Research Award (2024) — VIT Bhopal University</p>
   </div>
 
 </div>
