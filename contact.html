@@ -32,13 +32,19 @@
   .contact-value a:hover { border-color: var(--accent); }
 
   .section-heading { font-size: 13px; font-weight: 600; color: var(--muted); letter-spacing: 0.08em; text-transform: uppercase; margin: 2.5rem 0 1rem; padding-bottom: 0.5rem; border-bottom: 1px solid var(--border); }
+  .ref-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1rem; }
+  .ref-card { background: var(--card); border: 1px solid var(--border); border-radius: 8px; padding: 1.5rem; }
+  .ref-name { font-size: 15px; font-weight: 600; color: var(--text); margin-bottom: 2px; }
+  .ref-role { font-size: 13px; color: var(--muted); }
+  .ref-inst { font-size: 13px; color: var(--muted); margin-bottom: 6px; }
+  .ref-email a { font-size: 13px; color: var(--accent); text-decoration: none; border-bottom: 1px solid var(--border); }
 
   footer { text-align: center; padding: 2rem; font-size: 13px; color: var(--muted); border-top: 1px solid var(--border); margin-top: 2rem; }
 
   @media (max-width: 560px) {
     nav { padding: 0 1rem; flex-direction: column; align-items: flex-start; }
     nav .navlinks { width: 100%; }
-    nav .navlinks a { padding: 0.8rem 0.8rem; font-size: 12px; }
+    nav .navlinks a { padding: 0.8rem 0.75rem; font-size: 12px; }
     .contact-card { padding: 1.5rem; }
   }
 </style>
@@ -47,7 +53,7 @@
 <nav>
   <a class="brand" href="index.html">B. SureshBabu</a>
   <div class="navlinks">
-    <a href="index.html">About Me</a>
+    <a href="about.html">About Me</a>
     <a href="publications.html">Publications</a>
     <a href="conferences.html">Conferences</a>
     <a href="contact.html" class="active">Contact</a>
@@ -62,7 +68,7 @@
     <h2>Get in Touch</h2>
     <div class="contact-row">
       <div class="contact-label">Email</div>
-      <div class="contact-value"><a href="mailto:sureshsuju96@gmail.com">sureshsuju96@gmail.com</a></div>
+      <div class="contact-value"><a href="mailto:sureshbabu@aries.res.in">sureshbabu@aries.res.in</a></div>
     </div>
     <div class="contact-row">
       <div class="contact-label">Phone</div>
@@ -70,17 +76,14 @@
     </div>
     <div class="contact-row">
       <div class="contact-label">Position</div>
-      <div class="contact-value">Senior Project Associate</div>
+      <div class="contact-value">Postdoctoral Fellow</div>
     </div>
     <div class="contact-row">
       <div class="contact-label">Institute</div>
       <div class="contact-value">Aryabhatta Research Institute of Observational Sciences (ARIES), India</div>
     </div>
-    <div class="contact-row">
-      <div class="contact-label">PhD</div>
-      <div class="contact-value">VIT Bhopal University, Bhopal, India (2022–2026)</div>
-    </div>
   </div>
+
 
 </div>
 
