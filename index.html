@@ -9,37 +9,31 @@
 <style>
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
   :root { --bg: #fffbea; --text: #2a1f00; --muted: #7a6430; --border: #e8d89a; --accent: #c87a00; --card: #fff9d6; }
-  body { font-family: 'Inter', sans-serif; background: var(--bg); color: var(--text); min-height: 100vh; display: flex; flex-direction: column; }
+  body { font-family: 'Inter', sans-serif; background: var(--bg); color: var(--text); min-height: 100vh; display: flex; flex-direction: column; justify-content: center; align-items: center; }
 
-  .banner { width: 100%; height: 55vh; overflow: hidden; position: relative; }
-  .banner img { width: 100%; height: 100%; object-fit: cover; object-position: center 15%; display: block; }
-  .banner::after { content: ''; position: absolute; bottom: 0; left: 0; right: 0; height: 80px; background: linear-gradient(to bottom, transparent, var(--bg)); }
-
-  .info { display: flex; flex-direction: column; align-items: center; text-align: center; padding: 2.5rem 2rem 1.5rem; flex: 1; }
-  .info h1 { font-family: 'EB Garamond', serif; font-size: 42px; font-weight: 700; color: var(--text); margin-bottom: 0.4rem; letter-spacing: -0.5px; }
-  .info .jobtitle { font-size: 16px; font-weight: 600; color: var(--accent); margin-bottom: 6px; }
-  .info .institute { font-size: 14px; color: var(--muted); margin-bottom: 2rem; max-width: 420px; line-height: 1.5; }
+  .hero { display: flex; flex-direction: column; align-items: center; text-align: center; padding: 4rem 2rem 3rem; flex: 1; justify-content: center; }
+  .hero-photo { width: 260px; height: 320px; object-fit: cover; object-position: 60% top; border-radius: 8px; margin-bottom: 1.75rem; display: block; }
+  .hero h1 { font-family: 'EB Garamond', serif; font-size: 42px; font-weight: 700; color: var(--text); margin-bottom: 0.4rem; letter-spacing: -0.5px; }
+  .hero .jobtitle { font-size: 16px; font-weight: 600; color: var(--accent); margin-bottom: 6px; }
+  .hero .institute { font-size: 14px; color: var(--muted); margin-bottom: 2.25rem; max-width: 420px; line-height: 1.5; }
 
   .nav-buttons { display: flex; gap: 12px; flex-wrap: wrap; justify-content: center; }
   .nav-buttons a { font-size: 14px; font-weight: 500; padding: 10px 28px; border: 1.5px solid var(--border); border-radius: 4px; color: var(--muted); text-decoration: none; background: var(--card); transition: all 0.15s; }
   .nav-buttons a:hover { background: var(--accent); color: #fff; border-color: var(--accent); }
 
-  footer { padding: 2rem; font-size: 13px; color: var(--muted); border-top: 1px solid var(--border); text-align: center; }
+  footer { padding: 2rem; font-size: 13px; color: var(--muted); border-top: 1px solid var(--border); width: 100%; text-align: center; }
 
   @media (max-width: 480px) {
-    .banner { height: 40vh; }
-    .info h1 { font-size: 30px; }
+    .hero-photo { width: 200px; height: 250px; }
+    .hero h1 { font-size: 30px; }
     .nav-buttons a { padding: 9px 16px; font-size: 13px; }
   }
 </style>
 </head>
 <body>
 
-<div class="banner">
-  <img src="photo.jpg" alt="Dr. B. Suresh Babu">
-</div>
-
-<div class="info">
+<div class="hero">
+  <img class="hero-photo" src="photo.jpg" alt="Dr. B. Suresh Babu">
   <h1>Dr. B. Suresh Babu</h1>
   <div class="jobtitle">Postdoctoral Fellow</div>
   <div class="institute">Aryabhatta Research Institute of Observational Sciences (ARIES)</div>
